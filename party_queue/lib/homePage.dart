@@ -30,14 +30,72 @@ class HomePageState extends State<HomePage>
 				physics: new ClampingScrollPhysics(),
 				children: <Widget>
 				[
-					getButton
+					new SizedBox(height: 100.0,),
+
+					getTitle(text: "Join a party"),
+
+					new Container //party code input
+					(
+						alignment: Alignment.center,
+						decoration: new BoxDecoration 
+						(
+							borderRadius: new BorderRadius.all(new Radius.circular(40.0)),
+							color: Colors.grey[200],
+						),
+						margin: new EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0,),
+						padding: new EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+						child: new TextFormField
+						(
+							style: new TextStyle
+							(
+								color: Colors.grey[800],
+								fontSize: 20.0, 
+							),
+							decoration: new InputDecoration
+							(
+								fillColor: Colors.grey[200],
+								filled: true,
+								border: InputBorder.none,
+								hintText: 'Enter Party Code',
+								hintStyle: new TextStyle
+								(
+									color: Colors.grey,
+									fontSize: 20.0,
+								)
+							),
+
+						)
+					),
+
+					new SizedBox(height: 180.0,), //TODO: shrink on resize
+					
+					new Center //"want to host your own?" text
+					(
+						child: new Padding
+						(
+							padding: const EdgeInsets.symmetric(vertical: 16.0),
+							child: new Text
+							(
+								"Want to host your own?",
+								style: new TextStyle
+								(
+									fontStyle: FontStyle.italic,
+									color: Colors.grey,
+								)
+							),
+						),
+					),
+
+					getButton //host button
 					(
 						text: "HOST A PARTY",
 						onPressed: ()
 						{
-
+							//TODO: goto host page
 						}
 					),
+
+					new SizedBox(height: 10.0,),
 				],
 			)
 		);

@@ -64,3 +64,23 @@ Widget getButton({text: "", color: Colors.green, Function onPressed})
 		),
 	);
 }
+
+/// Returns a large title
+Widget getTitle({String text, size: 32.0})
+{
+	return new Padding
+	(
+		padding: EdgeInsets.all(8.0),
+		child: new Text
+		(
+			text,
+			textAlign: TextAlign.center,
+			style: new TextStyle
+			(
+				color: Colors.black,
+				fontWeight: FontWeight.bold,
+				fontSize: size,
+			),
+		),
+	);
+}
