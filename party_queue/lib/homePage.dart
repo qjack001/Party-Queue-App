@@ -2,7 +2,16 @@ import 'package:flutter/material.dart';
 import 'partyCode.dart';
 import 'uiElements.dart';
 
+///
+/// Home page for app
+/// 
+/// @title HomePage
+/// @author Jack Guinane
+/// @company Wolfhaus
+/// @date 2018-05-18
+///
 
+/// Stateful Widget that calls the HomePageState
 class HomePage extends StatefulWidget 
 {
 	HomePage({Key key, this.title}) : super(key: key);
@@ -12,6 +21,7 @@ class HomePage extends StatefulWidget
 	HomePageState createState() => new HomePageState();
 }
 
+/// Builds the home page scaffold
 class HomePageState extends State<HomePage> 
 {
 	@override
