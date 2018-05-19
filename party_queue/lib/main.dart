@@ -1,39 +1,36 @@
 import 'package:flutter/material.dart';
-import 'partyCode.dart';
+import 'homePage.dart';
 
-void main() => runApp(new MyApp());
+///
+/// Main file for app, is run at start
+/// 
+/// @title Main
+/// @author Jack Guinane
+/// @company Wolfhaus
+/// @date 2018-05-18
+///
 
-class MyApp extends StatelessWidget 
+/// The title of the application
+const String APP_NAME = "Spotify for Parties";
+ThemeData theme;
+
+/// Main method, runs app
+void main()
+{
+	theme = new ThemeData(primarySwatch: Colors.blue);
+	runApp(new App());
+}
+
+class App extends StatelessWidget 
 {
 	@override
 	Widget build(BuildContext context) 
 	{
 		return new MaterialApp
 		(
-			title: 'Flutter Demo',
-			theme: new ThemeData
-			(
-				primarySwatch: Colors.blue,
-			),
-			home: new MyHomePage(title: 'Flutter Demo Home Page'),
+			title: APP_NAME,
+			theme: theme,
+			home: new HomePage(title: APP_NAME),
 		);
-	}
-}
-
-class MyHomePage extends StatefulWidget 
-{
-	MyHomePage({Key key, this.title}) : super(key: key);
-	final String title;
-
-	@override
-	_MyHomePageState createState() => new _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> 
-{
-	@override
-	Widget build(BuildContext context) 
-	{
-		return new Scaffold();
 	}
 }

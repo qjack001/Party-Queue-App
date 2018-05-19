@@ -9,25 +9,21 @@
 /// 
 class PartyCode
 {
-	///
 	/// Returns a "party code" based on the 
 	/// inputted address
 	/// 
 	/// @param int the host's address (must be a 4-digit int)
 	/// @return String the party code
-	/// 
 	static String getCode(int address)
 	{
 		return adjectives[address ~/ 100] + " " + nouns[address % 100];
 	}
 
-	///
 	/// Returns an address based on the 
 	/// inputted party code
 	/// 
 	/// @param String the party code (must)
 	/// @return int the host's address
-	/// 
 	static int getAddress(String code)
 	{
 		return (adjectives.indexOf(code.split(" ")[0]) * 100) + nouns.indexOf(code.split(" ")[1]);
