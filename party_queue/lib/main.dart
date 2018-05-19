@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'partyCode.dart';
 
 void main() => runApp(new MyApp());
 
