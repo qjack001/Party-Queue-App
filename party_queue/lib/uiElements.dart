@@ -43,24 +43,28 @@ Widget getButton({text: "", color: Colors.green, Function onPressed})
 {
 	return new Center
 	(
-		child: new RawMaterialButton
+		child: new Padding
 		(
-			constraints: new BoxConstraints(minWidth: 250.0),
-		  	fillColor: color,
-		  	padding: new EdgeInsets.symmetric(vertical: 20.0),
-		  	elevation: 4.0, 
-		  	child: new Text
-		  	(
-		  		text,
-		  		style: new TextStyle
-		  		(
-		  			fontSize: 20.0,
-		  			fontWeight: FontWeight.bold,
-		  			color: Colors.white,
-		  		)
-		  	),
-		  	onPressed: onPressed,
-		  	shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(40.0)),
+			padding: EdgeInsets.all(8.0),
+			child: new RawMaterialButton
+			(
+				constraints: new BoxConstraints(minWidth: 250.0),
+					fillColor: color,
+					padding: new EdgeInsets.symmetric(vertical: 20.0),
+					elevation: 4.0, 
+					child: new Text
+					(
+						text,
+						style: new TextStyle
+						(
+							fontSize: 20.0,
+							fontWeight: FontWeight.bold,
+							color: Colors.white,
+						)
+					),
+					onPressed: onPressed,
+					shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(40.0)),
+			),
 		),
 	);
 }

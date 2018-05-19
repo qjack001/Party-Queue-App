@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'partyCode.dart';
 import 'uiElements.dart';
+import 'hostPage.dart';
 
 ///
 /// Home page for app
@@ -89,7 +90,6 @@ class HomePageState extends State<HomePage>
 								"Want to host your own?",
 								style: new TextStyle
 								(
-									fontStyle: FontStyle.italic,
 									color: Colors.grey,
 								)
 							),
@@ -101,7 +101,11 @@ class HomePageState extends State<HomePage>
 						text: "HOST A PARTY",
 						onPressed: ()
 						{
-							//TODO: goto host page
+							Navigator.push
+							(
+								context,
+								new MaterialPageRoute(builder: (context) => new HostPage())
+							);
 						}
 					),
 
