@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'partyCode.dart';
 import 'uiElements.dart';
+import 'server.dart';
 
 ///
 /// The page for hosting a party
@@ -25,12 +26,14 @@ class HostPage extends StatefulWidget
 class HostPageState extends State<HostPage> 
 {
 	String partyCode;
+	int address;
 
 	@override
 	void initState() 
 	{
 		super.initState();
-  		partyCode = PartyCode.getCode(2356); //TODO: get new random number and initiate a party
+		address = Server.newServer();
+  		partyCode = PartyCode.getCode(address); //TODO: get new random number and initiate a party
 	}
 
 	@override

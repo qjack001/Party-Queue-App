@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'partyCode.dart';
 import 'uiElements.dart';
 import 'hostPage.dart';
+import 'server.dart';
 
 ///
 /// Home page for app
@@ -74,6 +75,35 @@ class HomePageState extends State<HomePage>
 									fontSize: 20.0,
 								)
 							),
+							onSaved: (input)
+							{
+								int address = PartyCode.getAddress(input);
+								if (Server.exists(address))
+								{
+									Navigator.push
+									(
+										context, 
+										new MaterialPageRoute(builder: (context) => new PartyPage(address))
+									);
+								}
+								else
+								{
+									showDialog(context: context, child: new AlertDialog
+									(
+										title: getTitle(text: "No party found"),
+										content: new Text("Check the code, and make sure it is correct."),
+										semanticLabel: "Incorrect code entered",
+										actions: <Widget>
+										[
+											new FlatButton
+											(
+												child: new Text("OK"),
+												onPressed: () {Navigator.pop(context);},
+											),
+										],
+									));
+								}
+							},
 
 						)
 					),
