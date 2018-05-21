@@ -26,6 +26,7 @@ class PartyCode
 	/// @return int the host's address
 	static int getAddress(String code)
 	{
+		code = code.toLowerCase();
 		return (adjectives.indexOf(code.split(" ")[0]) * 100) + nouns.indexOf(code.split(" ")[1]);
 	}
 
