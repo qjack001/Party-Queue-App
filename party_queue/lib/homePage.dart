@@ -3,6 +3,7 @@ import 'partyCode.dart';
 import 'uiElements.dart';
 import 'hostPage.dart';
 import 'server.dart';
+import 'partyPage.dart';
 
 ///
 /// Home page for app
@@ -75,7 +76,7 @@ class HomePageState extends State<HomePage>
 									fontSize: 20.0,
 								)
 							),
-							onSaved: (input)
+							onFieldSubmitted: (input)
 							{
 								int address = PartyCode.getAddress(input);
 								if (Server.exists(address))

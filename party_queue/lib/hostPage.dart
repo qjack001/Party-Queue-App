@@ -33,7 +33,7 @@ class HostPageState extends State<HostPage>
 	{
 		super.initState();
 		address = Server.newServer();
-  		partyCode = PartyCode.getCode(address); //TODO: get new random number and initiate a party
+  		partyCode = PartyCode.getCode(address);
 	}
 
 	@override
@@ -65,9 +65,9 @@ class HostPageState extends State<HostPage>
 						}
 					),
 
-					getButton //leave button
+					getButton //end button
 					(
-						text: "LEAVE PARTY",
+						text: "END PARTY",
 						color: Colors.red[400],
 						onPressed: ()
 						{
