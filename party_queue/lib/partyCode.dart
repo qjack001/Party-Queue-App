@@ -27,7 +27,15 @@ class PartyCode
 	static int getAddress(String code)
 	{
 		code = code.toLowerCase();
-		return (adjectives.indexOf(code.split(" ")[0]) * 100) + nouns.indexOf(code.split(" ")[1]);
+		int first = (adjectives.indexOf(code.split(" ")[0]) * 100);
+		int second = (nouns.indexOf(code.split(" ")[1]));
+		
+		if (first == -101 || second == -1) //if either word was not found
+		{
+			return -1;
+		}
+
+		return first + second;
 	}
 
 	/// A big list of 100 adjectives
