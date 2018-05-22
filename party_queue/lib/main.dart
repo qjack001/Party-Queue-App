@@ -17,7 +17,7 @@ ThemeData theme;
 /// Main method, runs app
 void main()
 {
-	theme = new ThemeData(primarySwatch: Colors.blue);
+	theme = new ThemeData(primarySwatch: Colors.green);
 	runApp(new App());
 }
 
