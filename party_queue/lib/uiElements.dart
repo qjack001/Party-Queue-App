@@ -27,6 +27,7 @@ AppBar getAppBar({leading: const BackButton(color: Colors.black), title: ""})
 			title,
 			style: new TextStyle
 			(
+				fontFamily: "Circular",
 				fontWeight: FontWeight.bold,
 				color: Colors.black,
 			)
@@ -57,9 +58,11 @@ Widget getButton({text: "", color: Colors.green, Function onPressed})
 						text,
 						style: new TextStyle
 						(
+							fontFamily: "Circular",
 							fontSize: 20.0,
 							fontWeight: FontWeight.bold,
 							color: Colors.white,
+							letterSpacing: 1.0,
 						)
 					),
 					onPressed: onPressed,
@@ -81,6 +84,7 @@ Widget getTitle({String text, size: 32.0})
 			textAlign: TextAlign.center,
 			style: new TextStyle
 			(
+				fontFamily: "Circular",
 				color: Colors.black,
 				fontWeight: FontWeight.bold,
 				fontSize: size,

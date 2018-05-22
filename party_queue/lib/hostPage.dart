@@ -68,7 +68,7 @@ class HostPageState extends State<HostPage>
 					getButton //end button
 					(
 						text: "END PARTY",
-						color: Colors.red[400],
+						color: Colors.red[300],
 						onPressed: ()
 						{
 							Navigator.pop(context);

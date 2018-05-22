@@ -70,7 +70,7 @@ class PartyPageState extends State<PartyPage>
 					getButton //leave button
 					(
 						text: "LEAVE PARTY",
-						color: Colors.red[400],
+						color: Colors.red[300],
 						onPressed: ()
 						{
 							Navigator.pop(context);
