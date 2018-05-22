@@ -89,18 +89,15 @@ class HomePageState extends State<HomePage>
 								}
 								else
 								{
-									showDialog(context: context, child: new AlertDialog
+									showDialog(context: context, child: new SimpleDialog
 									(
 										title: getTitle(text: "No party found"),
-										content: new Text("Check the code, and make sure it is correct."),
 										semanticLabel: "Incorrect code entered",
-										actions: <Widget>
+										children: <Widget>
 										[
-											new FlatButton
-											(
-												child: new Text("OK"),
-												onPressed: () {Navigator.pop(context);},
-											),
+											getText(text: "Make sure the inputted code is correct."),
+
+											getFlatButton(text: "OK", onPressed: (){Navigator.pop(context);})
 										],
 									));
 								}
@@ -111,21 +108,7 @@ class HomePageState extends State<HomePage>
 
 					new SizedBox(height: 180.0,), //TODO: shrink on resize
 					
-					new Center //"want to host your own?" text
-					(
-						child: new Padding
-						(
-							padding: const EdgeInsets.symmetric(vertical: 16.0),
-							child: new Text
-							(
-								"Want to host your own?",
-								style: new TextStyle
-								(
-									color: Colors.grey,
-								)
-							),
-						),
-					),
+					getText(text: "Want to host your own?"),
 
 					getButton //host button
 					(

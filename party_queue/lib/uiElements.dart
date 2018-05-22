@@ -92,3 +92,49 @@ Widget getTitle({String text, size: 32.0})
 		),
 	);
 }
+
+/// Returns body text
+Widget getText({String text})
+{
+	return new Container
+	(
+		alignment: Alignment.topCenter,
+		padding: EdgeInsets.only(bottom: 16.0),
+		child: new Text
+		(
+			text,
+			style: new TextStyle
+			(
+				fontFamily: "Circular",
+				fontSize: 16.0,
+				color: Colors.grey,
+			)
+		)	
+	);
+}
+
+/// Returns a material-design flat button
+/// defualt color is green
+Widget getFlatButton({text: "OK", color: Colors.green, Function onPressed})
+{
+	return new Padding
+	(
+		padding: EdgeInsets.all(16.0),
+		child: new FlatButton
+		(
+			textColor: color,
+			child: new Text
+			(
+				text,
+				style: new TextStyle
+				(
+					fontSize: 32.0,
+					fontFamily: "Circular",
+					letterSpacing: 1.0,
+					fontWeight: FontWeight.bold,
+				),
+			),
+			onPressed: onPressed,
+		),
+	);
+}
