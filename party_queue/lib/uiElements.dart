@@ -115,7 +115,7 @@ Widget getText({String text})
 
 /// Returns a material-design flat button
 /// defualt color is green
-Widget getFlatButton({text: "OK", color: Colors.green, Function onPressed})
+Widget getFlatButton({text: "ok", color: Colors.green, Function onPressed})
 {
 	return new Padding
 	(

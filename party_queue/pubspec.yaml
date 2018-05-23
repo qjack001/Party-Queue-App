@@ -47,6 +47,9 @@ flutter:
         - asset: fonts/CircularStd-Book.otf
         - asset: fonts/CircularStd-Bold.otf
           weight: 700
+    - family: Monosten
+      fonts:
+        - asset: fonts/Monosten-A-webfont.ttf
   #
   # For details regarding fonts from package dependencies, 
   # see https://flutter.io/custom-fonts/#from-packages

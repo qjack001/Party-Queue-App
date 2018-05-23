@@ -56,13 +56,14 @@ class HomePageState extends State<HomePage>
 							color: Colors.grey[200],
 						),
 						margin: new EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0,),
-						padding: new EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+						padding: new EdgeInsets.fromLTRB(20.0, 12.0, 20.0, 6.0),
 						child: new TextFormField
 						(
 							style: new TextStyle
 							(
 								color: Colors.grey[800],
 								fontSize: 20.0, 
+								fontFamily: "Monosten",
 							),
 							decoration: new InputDecoration
 							(
@@ -74,6 +75,7 @@ class HomePageState extends State<HomePage>
 								(
 									color: Colors.grey,
 									fontSize: 20.0,
+									fontFamily: "Monosten",
 								)
 							),
 							onFieldSubmitted: (input)
