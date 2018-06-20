@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui' as ui;
 
 /// 
 /// A class for getting simple material design
@@ -13,34 +14,54 @@ import 'package:flutter/material.dart';
 /// Returns a styilized AppBar
 /// If no leading parameter is entered,
 /// defaults to a back button
-AppBar getAppBar({leading: const BackButton(color: Colors.black), title: ""})
+Widget getAppBar({context, leading: const BackButton(color: Colors.white), title: "", height: 60.0})
 {
-	return new AppBar
+	var iconPadding = EdgeInsets.all(16.0);
+
+	if(leading is BackButton)
+	{
+		iconPadding = EdgeInsets.fromLTRB(8.0, 0.0, 0.0, 0.0);
+	}
+
+	return new Container
 	(
-		iconTheme: new IconThemeData
+		color: Colors.transparent,
+		height: height,
+		child: new Row
 		(
-			color: Colors.black,
+			crossAxisAlignment: CrossAxisAlignment.center,
+			mainAxisAlignment: MainAxisAlignment.start,
+			children: <Widget>
+			[
+				new Padding
+				(
+					padding: iconPadding,
+					child: leading,
+				),
+
+				new Padding
+				(
+					padding: EdgeInsets.all(16.0),
+					child: new Text
+					(
+						title,
+						style: new TextStyle
+						(
+							fontFamily: "Circular",
+							fontWeight: FontWeight.bold,
+							color: Colors.white,
+							fontSize: 20.0,
+						)
+					),
+				),
+			],
 		),
-		elevation: 0.0,
-		title: new Text
-		(
-			title,
-			style: new TextStyle
-			(
-				fontFamily: "Circular",
-				fontWeight: FontWeight.bold,
-				color: Colors.black,
-			)
-		),
-		leading: leading,
-		bottomOpacity: 0.0,
-		backgroundColor: Colors.transparent,
 	);
 }
 
 /// Returns a styilized button
 /// Is green by default
-Widget getButton({text: "", color: Colors.green, Function onPressed})
+Widget getButton({text: "", color: Colors.white, textColor: Colors.black, Function onPressed})
 {
 	return new Center
 	(
@@ -61,7 +82,7 @@ Widget getButton({text: "", color: Colors.green, Function onPressed})
 							fontFamily: "Circular",
 							fontSize: 20.0,
 							fontWeight: FontWeight.bold,
-							color: Colors.white,
+							color: textColor,
 							letterSpacing: 1.0,
 						)
 					),
@@ -73,7 +94,7 @@ Widget getButton({text: "", color: Colors.green, Function onPressed})
 }
 
 /// Returns a large title
-Widget getTitle({String text, size: 32.0})
+Widget getTitle({String text, size: 32.0, isBlack: false})
 {
 	return new Padding
 	(
@@ -85,7 +106,7 @@ Widget getTitle({String text, size: 32.0})
 			style: new TextStyle
 			(
 				fontFamily: "Circular",
-				color: Colors.black,
+				color: isBlack? Colors.black : Colors.white,
 				fontWeight: FontWeight.bold,
 				fontSize: size,
 			),
@@ -94,7 +115,7 @@ Widget getTitle({String text, size: 32.0})
 }
 
 /// Returns body text
-Widget getText({String text})
+Widget getText({String text, isBlack: false})
 {
 	return new Container
 	(
@@ -107,7 +128,7 @@ Widget getText({String text})
 			(
 				fontFamily: "Circular",
 				fontSize: 16.0,
-				color: Colors.grey,
+				color: isBlack? Colors.grey : Colors.grey[100],
 			)
 		)	
 	);
@@ -135,6 +156,32 @@ Widget getFlatButton({text: "ok", color: Colors.green, Function onPressed})
 				),
 			),
 			onPressed: onPressed,
+		),
+	);
+}
+
+Widget getFrame({children: const <Widget>[], })
+{
+	return new Container
+	(
+		decoration: new BoxDecoration
+		(
+			gradient: new RadialGradient
+			(
+				center: Alignment.topCenter,
+				radius: 2.2,
+				stops: [0.1, 0.9],
+				colors: 
+				[
+					Color(0xFF63ff63),
+					Color(0xFF008e74),
+				],
+			),
+		),
+		child: new ListView
+		(
+			physics: new ClampingScrollPhysics(),
+			children: children,
 		),
 	);
 }
