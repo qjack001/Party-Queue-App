@@ -42,10 +42,10 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Circular
+    - family: Karla
       fonts:
-        - asset: fonts/CircularStd-Book.otf
-        - asset: fonts/CircularStd-Bold.otf
+        - asset: fonts/Karla-Regular.ttf
+        - asset: fonts/Karla-Bold.ttf
           weight: 700
     - family: Monosten
       fonts:

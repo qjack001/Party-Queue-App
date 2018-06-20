@@ -47,7 +47,7 @@ Widget getAppBar({context, leading: const BackButton(color: Colors.white), title
 						title,
 						style: new TextStyle
 						(
-							fontFamily: "Circular",
+							fontFamily: "Karla",
 							fontWeight: FontWeight.bold,
 							color: Colors.white,
 							fontSize: 20.0,
@@ -79,7 +79,7 @@ Widget getButton({text: "", color: Colors.white, textColor: Colors.black, Functi
 						text,
 						style: new TextStyle
 						(
-							fontFamily: "Circular",
+							fontFamily: "Karla",
 							fontSize: 20.0,
 							fontWeight: FontWeight.bold,
 							color: textColor,
@@ -105,7 +105,7 @@ Widget getTitle({String text, size: 32.0, isBlack: false})
 			textAlign: TextAlign.center,
 			style: new TextStyle
 			(
-				fontFamily: "Circular",
+				fontFamily: "Karla",
 				color: isBlack? Colors.black : Colors.white,
 				fontWeight: FontWeight.bold,
 				fontSize: size,
@@ -126,7 +126,7 @@ Widget getText({String text, isBlack: false})
 			text,
 			style: new TextStyle
 			(
-				fontFamily: "Circular",
+				fontFamily: "Karla",
 				fontSize: 16.0,
 				color: isBlack? Colors.grey : Colors.grey[100],
 			)
@@ -150,7 +150,7 @@ Widget getFlatButton({text: "ok", color: Colors.green, Function onPressed})
 				style: new TextStyle
 				(
 					fontSize: 32.0,
-					fontFamily: "Circular",
+					fontFamily: "Karla",
 					letterSpacing: 1.0,
 					fontWeight: FontWeight.bold,
 				),
