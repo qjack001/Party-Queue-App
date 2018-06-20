@@ -51,6 +51,7 @@ Widget getAppBar({context, leading: const BackButton(color: Colors.white), title
 							fontWeight: FontWeight.bold,
 							color: Colors.white,
 							fontSize: 20.0,
+							letterSpacing: -0.8,
 						)
 					),
 				),
@@ -109,13 +110,14 @@ Widget getTitle({String text, size: 32.0, isBlack: false})
 				color: isBlack? Colors.black : Colors.white,
 				fontWeight: FontWeight.bold,
 				fontSize: size,
+				letterSpacing: -1.0,
 			),
 		),
 	);
 }
 
 /// Returns body text
-Widget getText({String text, isBlack: false})
+Widget getText({String text, isBlack: false, size: 16.0})
 {
 	return new Container
 	(
@@ -127,8 +129,8 @@ Widget getText({String text, isBlack: false})
 			style: new TextStyle
 			(
 				fontFamily: "Karla",
-				fontSize: 16.0,
-				color: isBlack? Colors.grey : Colors.grey[100],
+				fontSize: size,
+				color: isBlack? Colors.grey[700] : Colors.grey[100],
 			)
 		)	
 	);

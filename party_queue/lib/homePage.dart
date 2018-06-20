@@ -53,7 +53,7 @@ class HomePageState extends State<HomePage>
 						decoration: new BoxDecoration 
 						(
 							borderRadius: new BorderRadius.all(new Radius.circular(40.0)),
-							color: Colors.grey[200],
+							color: Color(0x30ffffff),
 						),
 						margin: new EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0,),
 						padding: new EdgeInsets.fromLTRB(20.0, 12.0, 20.0, 6.0),
@@ -61,19 +61,19 @@ class HomePageState extends State<HomePage>
 						(
 							style: new TextStyle
 							(
-								color: Colors.grey[800],
+								color: Colors.white,
 								fontSize: 20.0, 
 								fontFamily: "Monosten",
 							),
 							decoration: new InputDecoration
 							(
-								fillColor: Colors.grey[200],
+								fillColor: Colors.transparent,
 								filled: true,
 								border: InputBorder.none,
 								hintText: 'Enter Party Code',
 								hintStyle: new TextStyle
 								(
-									color: Colors.grey,
+									color: Colors.grey[200],
 									fontSize: 20.0,
 									fontFamily: "Monosten",
 								)
@@ -97,7 +97,7 @@ class HomePageState extends State<HomePage>
 										semanticLabel: "Incorrect code entered",
 										children: <Widget>
 										[
-											getText(text: "Make sure the inputted code is correct.", isBlack: true),
+											getText(text: "Make sure the inputted code is correct.", isBlack: true, size: 18.0),
 
 											getFlatButton(text: "OK", onPressed: (){Navigator.pop(context);})
 										],
