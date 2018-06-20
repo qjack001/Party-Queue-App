@@ -63,7 +63,7 @@ class HomePageState extends State<HomePage>
 							(
 								color: Colors.white,
 								fontSize: 20.0, 
-								fontFamily: "Monosten",
+								fontFamily: "Plex Mono",
 							),
 							decoration: new InputDecoration
 							(
@@ -75,7 +75,7 @@ class HomePageState extends State<HomePage>
 								(
 									color: Colors.grey[200],
 									fontSize: 20.0,
-									fontFamily: "Monosten",
+									fontFamily: "Plex Monos",
 								)
 							),
 							onFieldSubmitted: (input)
