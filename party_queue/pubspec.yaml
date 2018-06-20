@@ -47,9 +47,9 @@ flutter:
         - asset: fonts/Karla-Regular.ttf
         - asset: fonts/Karla-Bold.ttf
           weight: 700
-    - family: Monosten
+    - family: Plex Mono
       fonts:
-        - asset: fonts/Monosten-A-webfont.ttf
+        - asset: fonts/IBMPlexMono-Medium.ttf
   #
   # For details regarding fonts from package dependencies, 
   # see https://flutter.io/custom-fonts/#from-packages
