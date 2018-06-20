@@ -43,13 +43,12 @@ class PartyPageState extends State<PartyPage>
 	{
 		return new Scaffold
 		(
-			appBar: getAppBar(title: partyName,),
-
-			body: new ListView
+			body: getFrame
 			(
-				physics: new ClampingScrollPhysics(),
 				children: <Widget>
 				[
+					getAppBar(title: partyName,),
+
 					new SizedBox(height: 100.0,),
 
 					getTitle(text: "You're at"),
@@ -70,7 +69,7 @@ class PartyPageState extends State<PartyPage>
 					getButton //leave button
 					(
 						text: "LEAVE PARTY",
-						color: Colors.red[300],
+						color: Colors.red[200],
 						onPressed: ()
 						{
 							Navigator.pop(context);

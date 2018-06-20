@@ -32,17 +32,17 @@ class HomePageState extends State<HomePage>
 	{
 		return new Scaffold
 		(
-			appBar: getAppBar
+			body: getFrame
 			(
-				title: "Spotify For Parties", //TODO: come up with name
-				leading: new Icon(Icons.bubble_chart) //TODO: add logo icon
-			),
-
-			body: new ListView
-			(
-				physics: new ClampingScrollPhysics(),
 				children: <Widget>
 				[
+					getAppBar
+					(
+						context: context, 
+						title: "Spotify For Parties", //TODO: come up with name
+						leading: new Icon(Icons.bubble_chart, color: Colors.white,)
+					),
+
 					new SizedBox(height: 100.0,),
 
 					getTitle(text: "Join a party"),
@@ -93,11 +93,11 @@ class HomePageState extends State<HomePage>
 								{
 									showDialog(context: context, child: new SimpleDialog
 									(
-										title: getTitle(text: "No party found"),
+										title: getTitle(text: "No party found", isBlack: true),
 										semanticLabel: "Incorrect code entered",
 										children: <Widget>
 										[
-											getText(text: "Make sure the inputted code is correct."),
+											getText(text: "Make sure the inputted code is correct.", isBlack: true),
 
 											getFlatButton(text: "OK", onPressed: (){Navigator.pop(context);})
 										],

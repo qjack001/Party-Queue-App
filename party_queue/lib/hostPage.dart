@@ -41,13 +41,12 @@ class HostPageState extends State<HostPage>
 	{
 		return new Scaffold
 		(
-			appBar: getAppBar(title: "Host A Party",),
-
-			body: new ListView
+			body: getFrame
 			(
-				physics: new ClampingScrollPhysics(),
 				children: <Widget>
 				[
+					getAppBar(title: "Host a Party"),
+
 					new SizedBox(height: 100.0,),
 
 					getTitle(text: "Your party code is"),
@@ -68,7 +67,7 @@ class HostPageState extends State<HostPage>
 					getButton //end button
 					(
 						text: "END PARTY",
-						color: Colors.red[300],
+						color: Colors.red[200],
 						onPressed: ()
 						{
 							Navigator.pop(context);
