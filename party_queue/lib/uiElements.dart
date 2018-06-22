@@ -171,12 +171,12 @@ Widget getFrame({children: const <Widget>[], })
 			gradient: new RadialGradient
 			(
 				center: Alignment.topCenter,
-				radius: 2.2,
-				stops: [0.1, 0.9],
+				radius: 2.4,
+				stops: [0.2, 0.9],
 				colors: 
 				[
-					Color(0xFF63ff63),
-					Color(0xFF008e74),
+					Color(0xFF7cd953),
+					Color(0xFF15883E),
 				],
 			),
 		),
