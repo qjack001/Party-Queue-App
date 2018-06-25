@@ -47,67 +47,32 @@ class HomePageState extends State<HomePage>
 
 					getTitle(text: "Join a party"),
 
-					new Container //party code input
+					getTextInput
 					(
-						alignment: Alignment.center,
-						decoration: new BoxDecoration 
-						(
-							borderRadius: new BorderRadius.all(new Radius.circular(40.0)),
-							color: Color(0x30ffffff),
-						),
-						margin: new EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0,),
-						padding: new EdgeInsets.fromLTRB(20.0, 12.0, 20.0, 6.0),
-						child: new TextFormField
-						(
-							style: new TextStyle
-							(
-								color: Colors.white,
-								fontSize: 20.0, 
-								fontFamily: "Plex Mono",
-								letterSpacing: 1.0,
-							),
-							decoration: new InputDecoration
-							(
-								fillColor: Colors.transparent,
-								filled: true,
-								border: InputBorder.none,
-								hintText: 'Enter Party Code',
-								hintStyle: new TextStyle
-								(
-									color: Colors.grey[200],
-									fontSize: 20.0,
-									fontFamily: "Plex Mono",
-									letterSpacing: 1.0,
-								)
-							),
-							onFieldSubmitted: (input)
+						hintText: "Enter Party Code", 
+						onFieldSubmitted: (input)
+						{
+							int address = PartyCode.getAddress(input);
+							if (Server.exists(address))
 							{
-								int address = PartyCode.getAddress(input);
-								if (Server.exists(address))
-								{
-									Navigator.push
-									(
-										context, 
-										new MaterialPageRoute(builder: (context) => new PartyPage(address))
-									);
-								}
-								else
-								{
-									showDialog(context: context, child: new SimpleDialog
-									(
-										title: getTitle(text: "No party found", isBlack: true),
-										semanticLabel: "Incorrect code entered",
-										children: <Widget>
-										[
-											getText(text: "Make sure the inputted code is correct.", isBlack: true, size: 18.0),
-
-											getFlatButton(text: "OK", onPressed: (){Navigator.pop(context);})
-										],
-									));
-								}
-							},
-
-						)
+								Navigator.push
+								(
+									context, 
+									new MaterialPageRoute(builder: (context) => new PartyPage(address))
+								);
+							}
+							else
+							{
+								getDialogBox
+								(
+									context: context,
+									semanticLabel: "invalid party code",
+									title: "No party found",
+									line1: "Make sure the inputted code",
+                  line2: "is correct.",
+								);
+							}
+						}
 					),
 
 					new SizedBox(height: 180.0,), //TODO: shrink on resize

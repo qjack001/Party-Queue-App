@@ -117,12 +117,12 @@ Widget getTitle({String text, size: 32.0, isBlack: false})
 }
 
 /// Returns body text
-Widget getText({String text, isBlack: false, size: 16.0})
+Widget getText({String text, isBlack: false, size: 16.0, noPadding: false})
 {
 	return new Container
 	(
 		alignment: Alignment.topCenter,
-		padding: EdgeInsets.only(bottom: 16.0),
+		padding: (noPadding)? EdgeInsets.all(0.0) : EdgeInsets.only(bottom: 16.0),
 		child: new Text
 		(
 			text,
@@ -186,4 +186,61 @@ Widget getFrame({children: const <Widget>[], })
 			children: children,
 		),
 	);
+}
+
+Widget getTextInput({hintText: "", Function onFieldSubmitted})
+{
+	return new Container
+	(
+		alignment: Alignment.center,
+		decoration: new BoxDecoration 
+		(
+			borderRadius: new BorderRadius.all(new Radius.circular(40.0)),
+			color: Color(0x30ffffff),
+		),
+		margin: new EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0,),
+		padding: new EdgeInsets.fromLTRB(20.0, 12.0, 20.0, 6.0),
+		child: new TextFormField
+		(
+			style: new TextStyle
+			(
+				color: Colors.white,
+				fontSize: 20.0, 
+				fontFamily: "Plex Mono",
+				letterSpacing: 1.0,
+			),
+			decoration: new InputDecoration
+			(
+				fillColor: Colors.transparent,
+				filled: true,
+				border: InputBorder.none,
+				hintText: hintText,
+				hintStyle: new TextStyle
+				(
+					color: Color(0x88ffffff),
+					fontSize: 20.0,
+					fontFamily: "Plex Mono",
+					letterSpacing: 1.0,
+				)
+			),
+			onFieldSubmitted: onFieldSubmitted,
+		)
+	);
+}
+
+void getDialogBox({BuildContext context, title: "", line1: "", line2: "", semanticLabel: "Unknown error dialog",})
+{
+	showDialog(context: context, child: new SimpleDialog
+	(
+		title: getTitle(text: title, isBlack: true),
+		semanticLabel: semanticLabel,
+		children: <Widget>
+		[
+			getText(text: line1, isBlack: true, size: 18.0, noPadding: true),
+
+			getText(text: line2, isBlack: true, size: 18.0, noPadding: true),
+
+			getFlatButton(text: "OK", onPressed: (){Navigator.pop(context);})
+		],
+	));
 }
