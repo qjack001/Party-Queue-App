@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 import 'dart:ui' as ui;
 
-/// 
-/// A class for getting simple material design
-/// elements, styilized to match the look and feel of the app
-/// 
-/// @title Main
-/// @author Jack Guinane
-/// @company Wolfhaus
-/// @date 2018-05-18
-/// 
+/*
+ * Copyright 2018 - 2018 Wolfhaus, Wolfhaus
+ * 
+ * File: uiElements.dart
+ * Project: npmpkg
+ * File Created: Friday, 18th May 2018 10:06:27 pm
+ * Author: Jack Guinane (jackguinane@gmail.com)
+ * -----
+ * Last Modified: Tuesday, 26th June 2018 4:26:47 pm
+ * Modified By: Jack Guinane (jackguinane@gmail.com>)
+ * -----
+ * Description: A class for getting simple material design
+ * elements, custom styilized to match the look and feel of the app
+ */
 
 /// Returns a styilized AppBar
 /// If no leading parameter is entered,
