@@ -5,7 +5,7 @@ import 'dart:ui' as ui;
  * Copyright 2018 - 2018 Wolfhaus, Wolfhaus
  * 
  * File: uiElements.dart
- * Project: npmpkg
+ * Project: partyhaus
  * File Created: Friday, 18th May 2018 10:06:27 pm
  * Author: Jack Guinane (jackguinane@gmail.com)
  * -----

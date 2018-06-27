@@ -3,14 +3,19 @@ import 'partyCode.dart';
 import 'uiElements.dart';
 import 'server.dart';
 
-///
-/// The page for hosting a party
-/// 
-/// @title HostPage
-/// @author Jack Guinane
-/// @company Wolfhaus
-/// @date 2018-05-19
-///
+/*
+ * Copyright 2018 - 2018 Wolfhaus, Wolfhaus
+ * 
+ * File: hostPage.dart
+ * Project: partyhaus
+ * File Created: Saturday, 19th May 2018 4:23:34 pm
+ * Author: Jack Guinane (jackguinane@gmail.com)
+ * -----
+ * Last Modified: Wednesday, 27th June 2018 3:53:13 pm
+ * Modified By: Jack Guinane (jackguinane@gmail.com>)
+ * -----
+ * Description: The page for hosting a party
+ */
 
 /// Stateful Widget that calls the HostPageState
 class HostPage extends StatefulWidget 
