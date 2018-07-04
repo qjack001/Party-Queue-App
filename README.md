@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="TODO: link to website"><img src="https://github.com/qjack001/Party-Queue-App/blob/master/party_queue/assets/app_icon/web_hi_res_512.png?raw=true" alt="partyhaus" width="200"></a>
+  <a href="TODO: link to website"><img src="https://raw.githubusercontent.com/qjack001/Party-Queue-App/master/party_queue/assets/app_icon/res/mipmap-xxxhdpi/app_icon_final.png" alt="partyhaus" width="150"></a>
   <br>
   Partyhaus
   <br>
