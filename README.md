@@ -47,7 +47,9 @@ See [CHANGELOG.md](https://github.com/qjack001/Party-Queue-App/blob/master/CHANG
 
 ## Credits
 
-- TODO
+- [IBM](https://www.ibm.com/) for its free font [Plex](https://www.ibm.com/plex/)
+- [Jonathan Pinhorn](https://twitter.com/jonpinhorn_type) for his free font [Karla](https://fonts.google.com/specimen/Karla)
+- [The Flutter team](https://github.com/flutter/) for creating and maintaining [Flutter.io](https://flutter.io)
 
 ## Authors
 
