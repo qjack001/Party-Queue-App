@@ -7,6 +7,8 @@
 
 [![IMPROVED](https://img.shields.io/badge/-IMPROVED-5500FF.svg?colorA=5500FF&logoWidth=-8)]() Improved readability of text on gradient
 
+[![IMPROVED](https://img.shields.io/badge/-IMPROVED-5500FF.svg?colorA=5500FF&logoWidth=-8)]() Updated README.md file
+
 ***
 
 
