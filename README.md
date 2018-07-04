@@ -43,13 +43,13 @@ We are not currently looking for contributions to the development of the project
 
 ## Changelog
 
-See [CHANGELOG.md](https://github.com/qjack001/Party-Queue-App/blob/master/CHANGELOG.md).
+For an up-to-date copy of the changelog, see [CHANGELOG.md](https://github.com/qjack001/Party-Queue-App/blob/master/CHANGELOG.md).
 
 ## Credits
 
-- [IBM](https://www.ibm.com/) for its free font [Plex](https://www.ibm.com/plex/)
-- [Jonathan Pinhorn](https://twitter.com/jonpinhorn_type) for his free font [Karla](https://fonts.google.com/specimen/Karla)
-- [The Flutter team](https://github.com/flutter/) for creating and maintaining [Flutter.io](https://flutter.io)
+- [IBM](https://www.ibm.com/) for providing the font [Plex](https://www.ibm.com/plex/)
+- [Jonathan Pinhorn](https://twitter.com/jonpinhorn_type) for providing the font [Karla](https://fonts.google.com/specimen/Karla)
+- [The Flutter team](https://github.com/flutter/) for providing and maintaining the [Flutter.io](https://flutter.io) app framework
 
 ## Authors
 
