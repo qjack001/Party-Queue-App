@@ -10,6 +10,7 @@
 <h4 align="center">Partyhaus is a mobile app for building collaborative playlists in real time.</h4>
 
 <p align="center">
+  <a href="#description">Description</a> •
   <a href="#key-features">Key Features</a> •
   <a href="#contributing">Contributing</a> •
   <a href="#changelog">Changelog</a> •
@@ -20,9 +21,20 @@
 
 [TODO: screenshot]
 
+## Description
+
+Partyhaus is designed to allow a group of people to collaboratively build and play a custom playlist. Using Spotify's API, users can request songs they want to hear while attending a party. These requests are then prioritized by popularity. The more a song is requested, the higher up it moves in the queue. This live playlist is then sent to the party host's phone and played through their Spotify account, removing the need for designated DJ. **This app is currently in development.**
+
 ## Key Features
 
-- TODO
+- ~~Live-updating playlist~~ **Not yet implemented**
+- ~~Prioritized requests based of frequency~~ **Not yet implemented**
+- ~~Sign up through Spotify~~ **Not yet implemented**
+- ~~Custom party name for hosts~~ **Not yet implemented**
+- Easy to share "party codes" for joining a party
+- ~~Set default playlist (pre-made playlist for when there are no requests)~~ **Not yet implemented**
+- ~~Control ratio of defualt playlist songs to requested songs~~ **Not yet implemented**
+- ~~Request any song availible on Spotify~~ **Not yet implemented**
 
 ## Contributing
 
