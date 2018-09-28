@@ -62,7 +62,11 @@ class PartyPageState extends State<PartyPage>
 						text: "REQUEST",
 						onPressed: ()
 						{
-							//TODO: goto request page
+							Navigator.push
+							(
+								context,
+								new MaterialPageRoute(builder: (context) => new RequestPage())
+							);
 						}
 					),
 

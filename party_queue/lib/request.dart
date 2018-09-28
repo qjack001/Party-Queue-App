@@ -9,27 +9,27 @@ import 'package:flutter/services.dart';
  * 
  * File: hostPage.dart
  * Project: partyhaus
- * File Created: Saturday, 19th May 2018 4:23:34 pm
+ * File Created: Thursday, 27th September 2018 3:51:02 pm
  * Author: Jack Guinane (jackguinane@gmail.com)
  * -----
- * Last Modified: Thursday, 27th September 2018 3:34:13 pm
+ * Last Modified: Thursday, 27th September 2018 3:51:02 pm
  * Modified By: Jack Guinane (jackguinane@gmail.com>)
  * -----
  * Description: The page for hosting a party
  */
 
 /// Stateful Widget that calls the HostPageState
-class HostPage extends StatefulWidget 
+class RequestPage extends StatefulWidget 
 {
-	HostPage({Key key, this.title}) : super(key: key);
+	RequestPage({Key key, this.title}) : super(key: key);
 	final String title;
 
 	@override
-	HostPageState createState() => new HostPageState();
+	RequestPageState createState() => new RequestPageState();
 }
 
 /// Builds the host page scaffold
-class HostPageState extends State<HostPage> 
+class RequestPageState extends State<RequestPage> 
 {
 	String partyCode;
 	int address;
