@@ -56,7 +56,7 @@ For an up-to-date copy of the changelog, see [CHANGELOG.md](https://github.com/q
 
 [**Jack Guinane**](https://github.com/qjack001) - Front-end developer and designer.
 
-[**Matthew Pollock**](https://github.com/Matthew-Pollock) - Back-end development.
+[**Quinn Pollock**](https://github.com/holopollock) - Back-end development.
 
 ## License
 
