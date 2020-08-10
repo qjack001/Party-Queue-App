@@ -1,3 +1,4 @@
+> This project has been archived. Development hit a roadblock and other solutions (such as [this one](https://playify.io/), [this one](https://www.partyfy.io/), and [Spotify's own feature](https://techcrunch.com/2019/05/31/spotify-social-listening/)) have been released that tackle this problem better.
 
 <h1 align="center">
   <br>
@@ -27,14 +28,14 @@ Partyhaus is designed to allow a group of people to collaboratively build and pl
 
 ## Key Features
 
-- ~~Live-updating playlist~~ **Not yet implemented**
-- ~~Prioritized requests based of frequency~~ **Not yet implemented**
-- ~~Sign up through Spotify~~ **Not yet implemented**
-- ~~Custom party name for hosts~~ **Not yet implemented**
+- Live-updating playlist
+- Prioritized requests based of frequency
+- Sign up through Spotify
+- Custom party name for hosts
 - Easy to share "party codes" for joining a party
-- ~~Set default playlist (pre-made playlist for when there are no requests)~~ **Not yet implemented**
-- ~~Control ratio of defualt playlist songs to requested songs~~ **Not yet implemented**
-- ~~Request any song availible on Spotify~~ **Not yet implemented**
+- Set default playlist (pre-made playlist for when there are no requests)
+- Control ratio of defualt playlist songs to requested songs
+- Request any song availible on Spotify
 
 ## Contributing
 
